@@ -30,7 +30,7 @@ protocol MoviesListPresenterOutputProtocol: UIViewController {
 }
 
 protocol MovieCellProtocol: AnyObject {
-    func setMovie(title: String, image: String)
+    func setMovie(title: String, releaseDate: String, image: String)
 }
 
 protocol MoviesListRouterProtocol {

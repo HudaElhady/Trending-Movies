@@ -33,7 +33,7 @@ extension MoviesListPresenter: MoviesListPresenterProtocol {
     
     func configureCell(_ cell: MovieCellProtocol,at index: Int) {
         let movie = moviesList[index]
-        cell.setMovie(title: movie.title ?? "", image: MoviesListAPIsConstants.imageBaseUrl + (movie.posterPath ?? "") )
+        cell.setMovie(title: movie.title ?? "", releaseDate: movie.releaseDate ?? "", image: MoviesListAPIsConstants.imageBaseUrl + (movie.posterPath ?? "") )
     }
     
     func openMovieDetails(at index: Int) {
